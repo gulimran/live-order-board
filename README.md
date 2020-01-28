@@ -12,29 +12,36 @@ Use maven command line to run tests and package this application
 
 The following technologies used for the ‘Live Order Board’ application:
 
-•	Dependency injection – Spring 5 with JSR-330 annotations
-•	Concurrent Hash Map – In-memory database
-•	Lombok – Assist with boilerplate code in domain objects
-•	Junit – Unit testing
-•	Spring test – Integration testing
-•	Cucumber – Acceptance testing using Spring and Java
-•	Mockito – Mocking dependencies 
-•	Hamcrest – For assertion of test results
+| Feature                 |      Description                   |
+| ----------------------- | ---------------------------------- |
+| Language  | Java 8 |
+| Dependency injection  | Spring 5 with JSR-330 annotations |
+| Database | In-memory database - Concurrent Hash Map |
+| Domain classes | Lombok - Assist with boilerplate code in domain objects |
+| Unit testing | Junit |
+| Mocking | Mockito for mocking dependencies |
+| Assertion |Hamcrest for assertion of test results |
+| Integration testing | Spring test library for Integration testing |
+| Acceptance testing | Cucumber for acceptance testing using Spring and Java |
 
 ## Assumptions
 
-•	To get order summary, user must provide the type of order, i.e. SELL or BUY.
-•	Validation on Order quantity and price are not required at this time.
-•	Database validation for non-existing or duplicate orders is not required at this time.
-•	Java doc is only required for client facing interface
+| Assumptions |
+| ------------------------------------------------------------------------------ |
+| To get order summary, user must provide the type of order, i.e. SELL or BUY. |
+| Validation on Order quantity and price are not required at this time. |
+| Database validation for non-existing or duplicate orders is not required at this time. |
+| Java doc is only required for client facing interface |
 
 ## Scenarios
 
 See the following feature file:
-
+```json
 live-order-board/src/test/resources/
-
+```
+```json
 imran.live.order.board.acceptance.live-order-board.feature
+```
 
 Scenarios also listed on next page …
 
